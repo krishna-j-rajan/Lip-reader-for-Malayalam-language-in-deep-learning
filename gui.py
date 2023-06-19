@@ -299,6 +299,8 @@ def prediction():
         a=u'ഇല'
         b=a.encode('utf-8').decode('utf-8')
         print(b)
+    else:
+        print("No words")
 
   
     out_label.config(text=b)
@@ -314,7 +316,7 @@ def Check():
 
     
     global f1
-    f1=Frame(f,bg="Lavender")
+    f1=Frame(f,bg="white")
     f1.place(x=0,y=0,width=560,height=340)
     f1.config()
                    
@@ -324,7 +326,7 @@ def Check():
     global my_label
     my_label=Label(f1,bg="Lavender")
     global label
-    label=Label(f1,text="No files uploaded",foreground="red",font="arial 10",bg="Lavender")
+    label=Label(f1,text="NO FILES UPLOADED",foreground="black",font="arial 10",bg="white")
     label.pack()
 
     
@@ -333,23 +335,23 @@ def Check():
 
     
     global f2
-    f2=Frame(f,bg="light green")
+    f2=Frame(f,bg="white")
     f2.place(x=0,y=340,width=560,height=320)
     f2.config(pady=20)
     
-    result_label=Label(f2,text="RESULT",font="arial 16",bg="light green")
+    result_label=Label(f2,text="RESULT",font="arial 16",bg="white")
     result_label.pack(padx=0,pady=0)
 
     global out_label
-    out_label=Label(f2,text="",bg="light green",font="arial 16")
+    out_label=Label(f2,text="",bg="white",font="arial 16")
     out_label.pack(pady=40)
     
 
-    f3=Frame(f,bg="Salmon")
+    f3=Frame(f,bg="grey")
     f3.place(x=560,y=0,width=240,height=690)
     f3.config()
 
-    name_label=Label(f3,text="Process",font="arial 14",bg="Salmon")
+    name_label=Label(f3,text="STEPS UNDERTAKEN",font="arial 14",bg="grey")
     name_label.pack(pady=20)
 
     global list_box
